@@ -23,3 +23,17 @@ Features of Frontend:
 => Redux Middlewares are used to make requests to API
 => Axios is used for making Requests
 => Used Materialize Css
+
+Note : The Available Tables will be empty intially, We have to populate it with data, for that i have created a backend route /manageTable.
+In order to populate that send this as a body via post request from postman or any request creators
+
+eg :
+body = {
+time : "2 PM" // String - Create avalaible tables for particular time,
+capcity : "5" // String - Capacity of table,
+startNumber : 5 // Number - an integer denotes the start of a series of tables,
+number : 10 // Indicates the amount of table to be created
+}
+
+Please make a request as above, so that a series of available tables can be created
+from which the user can book tables
